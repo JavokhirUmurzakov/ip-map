@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6efbba907b1098585a2d7544339bda56 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6efbba907b1098585a2d7544339bda56" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6efbba907b1098585a2d7544339bda56 = L.map(
+                "map_6efbba907b1098585a2d7544339bda56",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_19b4161665028cbfa086f498ef081b65 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_19b4161665028cbfa086f498ef081b65.addTo(map_6efbba907b1098585a2d7544339bda56);
+        
+    
+            var marker_aad850f636393ca665d7e4433e646027 = L.marker(
+                [39.03, -77.5],
+                {
+}
+            ).addTo(map_6efbba907b1098585a2d7544339bda56);
+        
+    
+            var icon_d65882ec3e2754668af96e692ee9305b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd53c4bbcc81b1845721cec8460b62f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b0ca78809bbe6af48de4550ac5ff7c9 = $(`<div id="html_7b0ca78809bbe6af48de4550ac5ff7c9" style="width: 100.0%; height: 100.0%;">IP: 8.8.8.8 City: Ashburn Country: United States ISP: Google LLC</div>`)[0];
+                popup_dd53c4bbcc81b1845721cec8460b62f5.setContent(html_7b0ca78809bbe6af48de4550ac5ff7c9);
+            
+        
+
+        marker_aad850f636393ca665d7e4433e646027.bindPopup(popup_dd53c4bbcc81b1845721cec8460b62f5)
+        ;
+
+        
+    
+    
+            marker_aad850f636393ca665d7e4433e646027.bindTooltip(
+                `<div>
+                     8.8.8.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aad850f636393ca665d7e4433e646027.setIcon(icon_d65882ec3e2754668af96e692ee9305b);
+            
+    
+            var marker_7e67dac3bd4bbec610869877f428f5cf = L.marker(
+                [-27.4766, 153.0166],
+                {
+}
+            ).addTo(map_6efbba907b1098585a2d7544339bda56);
+        
+    
+            var icon_6a3bb0dabe2e76184b3bd926bacc52eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bd8293b66a6bb0973817932026c36fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2178a5e365a886c615ac116805c534dc = $(`<div id="html_2178a5e365a886c615ac116805c534dc" style="width: 100.0%; height: 100.0%;">IP: 1.1.1.1 City: South Brisbane Country: Australia ISP: Cloudflare, Inc</div>`)[0];
+                popup_2bd8293b66a6bb0973817932026c36fa.setContent(html_2178a5e365a886c615ac116805c534dc);
+            
+        
+
+        marker_7e67dac3bd4bbec610869877f428f5cf.bindPopup(popup_2bd8293b66a6bb0973817932026c36fa)
+        ;
+
+        
+    
+    
+            marker_7e67dac3bd4bbec610869877f428f5cf.bindTooltip(
+                `<div>
+                     1.1.1.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7e67dac3bd4bbec610869877f428f5cf.setIcon(icon_6a3bb0dabe2e76184b3bd926bacc52eb);
+            
+    
+            var marker_18e4abf6ae30156a53f04dadd8b45d87 = L.marker(
+                [45.2502, -93.6487],
+                {
+}
+            ).addTo(map_6efbba907b1098585a2d7544339bda56);
+        
+    
+            var icon_68e9955ec56347842c976f72fa23ad9c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c7fc55067cd99265d310368e1759bab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b349def5b4db5d2ea64ebcc248cfb2f5 = $(`<div id="html_b349def5b4db5d2ea64ebcc248cfb2f5" style="width: 100.0%; height: 100.0%;">IP: 128.101.101.101 City: Albertville Country: United States ISP: University of Minnesota</div>`)[0];
+                popup_3c7fc55067cd99265d310368e1759bab.setContent(html_b349def5b4db5d2ea64ebcc248cfb2f5);
+            
+        
+
+        marker_18e4abf6ae30156a53f04dadd8b45d87.bindPopup(popup_3c7fc55067cd99265d310368e1759bab)
+        ;
+
+        
+    
+    
+            marker_18e4abf6ae30156a53f04dadd8b45d87.bindTooltip(
+                `<div>
+                     128.101.101.101
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_18e4abf6ae30156a53f04dadd8b45d87.setIcon(icon_68e9955ec56347842c976f72fa23ad9c);
+            
+    
+            var marker_aaadd6c790fe34bf25953ee80b7449d5 = L.marker(
+                [34.0549, -118.243],
+                {
+}
+            ).addTo(map_6efbba907b1098585a2d7544339bda56);
+        
+    
+            var icon_ce343c235b9814004e9e72937a3a30c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04bfa466ea70463c5d6a7d1b4f208bc4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f772beebef125913b0646a2dd299e79 = $(`<div id="html_3f772beebef125913b0646a2dd299e79" style="width: 100.0%; height: 100.0%;">IP: 172.217.5.78 City: Los Angeles Country: United States ISP: Google LLC</div>`)[0];
+                popup_04bfa466ea70463c5d6a7d1b4f208bc4.setContent(html_3f772beebef125913b0646a2dd299e79);
+            
+        
+
+        marker_aaadd6c790fe34bf25953ee80b7449d5.bindPopup(popup_04bfa466ea70463c5d6a7d1b4f208bc4)
+        ;
+
+        
+    
+    
+            marker_aaadd6c790fe34bf25953ee80b7449d5.bindTooltip(
+                `<div>
+                     172.217.5.78
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aaadd6c790fe34bf25953ee80b7449d5.setIcon(icon_ce343c235b9814004e9e72937a3a30c4);
+            
+    
+            var marker_13de36e0575f6370011ff842658f9cbc = L.marker(
+                [50.1103, 8.7147],
+                {
+}
+            ).addTo(map_6efbba907b1098585a2d7544339bda56);
+        
+    
+            var icon_772004a33b54db20700408c41554f19d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_373d8fc330433209744c661faf92f315 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b643a0ed6343e22aab6ed2e81c805cce = $(`<div id="html_b643a0ed6343e22aab6ed2e81c805cce" style="width: 100.0%; height: 100.0%;">IP: 199.247.16.90 City: Frankfurt am Main Country: Germany ISP: The Constant Company, LLC</div>`)[0];
+                popup_373d8fc330433209744c661faf92f315.setContent(html_b643a0ed6343e22aab6ed2e81c805cce);
+            
+        
+
+        marker_13de36e0575f6370011ff842658f9cbc.bindPopup(popup_373d8fc330433209744c661faf92f315)
+        ;
+
+        
+    
+    
+            marker_13de36e0575f6370011ff842658f9cbc.bindTooltip(
+                `<div>
+                     199.247.16.90
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_13de36e0575f6370011ff842658f9cbc.setIcon(icon_772004a33b54db20700408c41554f19d);
+            
+    
+            var marker_41a1163ebcb19f5d8552a606002794a7 = L.marker(
+                [41.2615, 69.2177],
+                {
+}
+            ).addTo(map_6efbba907b1098585a2d7544339bda56);
+        
+    
+            var icon_d7ff0276ec907ce5d5ff4cb6dbcde0c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31e13e5544979c9915365758dddc1bde = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e1f38c79565476a741f445d64baaf98 = $(`<div id="html_9e1f38c79565476a741f445d64baaf98" style="width: 100.0%; height: 100.0%;">IP: 178.218.203.109 City: Tashkent Country: Uzbekistan ISP: PE Turon Media</div>`)[0];
+                popup_31e13e5544979c9915365758dddc1bde.setContent(html_9e1f38c79565476a741f445d64baaf98);
+            
+        
+
+        marker_41a1163ebcb19f5d8552a606002794a7.bindPopup(popup_31e13e5544979c9915365758dddc1bde)
+        ;
+
+        
+    
+    
+            marker_41a1163ebcb19f5d8552a606002794a7.bindTooltip(
+                `<div>
+                     178.218.203.109
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_41a1163ebcb19f5d8552a606002794a7.setIcon(icon_d7ff0276ec907ce5d5ff4cb6dbcde0c1);
+            
+    
+            var marker_174592c1dbfd6abc85c18607543ce7a8 = L.marker(
+                [41.2615, 69.2177],
+                {
+}
+            ).addTo(map_6efbba907b1098585a2d7544339bda56);
+        
+    
+            var icon_a89c29e9ccf0799d8d3ec0d39ebd56e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b936db983d8bbd2721bbc4974428b18a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9eeff58f7bd6dc2152a99e039d922d43 = $(`<div id="html_9eeff58f7bd6dc2152a99e039d922d43" style="width: 100.0%; height: 100.0%;">IP: 89.236.249.253 City: Tashkent Country: Uzbekistan ISP: "IST TELEKOM" JV LLC</div>`)[0];
+                popup_b936db983d8bbd2721bbc4974428b18a.setContent(html_9eeff58f7bd6dc2152a99e039d922d43);
+            
+        
+
+        marker_174592c1dbfd6abc85c18607543ce7a8.bindPopup(popup_b936db983d8bbd2721bbc4974428b18a)
+        ;
+
+        
+    
+    
+            marker_174592c1dbfd6abc85c18607543ce7a8.bindTooltip(
+                `<div>
+                     89.236.249.253
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_174592c1dbfd6abc85c18607543ce7a8.setIcon(icon_a89c29e9ccf0799d8d3ec0d39ebd56e3);
+            
+</script>
+</html>
